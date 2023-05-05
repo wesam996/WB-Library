@@ -1,199 +1,56 @@
-
-body{
+body {
     font-family: "Montserrat";
+    background-color: #BFCCB5;
 }
 
-h1, h2, h3, h4 ,h5 ,h6 {
-    font-family: "Montserrat-Bold";
+/* title */
+
+.title {
+    background-image:url("../wallhaven-1.jpg");
+    color: black;
 }
 
-.h2 {
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
+/* Feuture */
 
-.h3 {
-    font-size: 1.5rem;
-}
-
-.p {
-   color: #8f8f8f;
-}
-
-/* Headings */
-
-.big-heading {
-    font-family: "Montserrat-Black";
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-
-#title {
-    background-color: #ff4c68;
+.hh {
     color: #fff;
+   font-family: 'Open Sans' !important;
+   padding: 2% 50px;
 }
-
-.container-fluid {
-   padding: 3% 15% ;
-   text-align: left;
-   
-}
-
-
-/* section */
-
-
-
-     /* Navigation Bar*/
-
-.navbar {
-    padding: 0 0 4.5rem;
-}     
-
-.navbar-brad {
-    font-family: "Ubuntu";
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.nav-link {
-    font-size: 1.2rem;
-    font-family: "montserrat-light";
-}
-
-.nav-item {
-    padding: 0 18px;
-}
-
-
-    /* Download Buttuns */
-
-.downloud-buttun {
-    margin: 5% 3% 5% 0;
-}    
-
-
-    /* Title Image */
-
-.title-image {
-    width: 60%;
-    transform: rotate(25deg);
-    position: absolute;
-    right: 30%;
-}    
-
-
-    /*Features Section*/
-
-#features {
-    padding: 7% 15%;
-    background-color: #fff;
-    position: relative
-}    
 
 .feature-box {
     text-align: center;
     padding: 4.5%;
 }
 
-.icon {
-    color: #ef8172;
-    margin-bottom: 1rem;
+.ml-1 {
+    margin-left: (-spacer * .25) !important;
 }
 
-.icon:hover {
-    color: #ff4c68;
-}
-
-
-  /*Testimoial Section*/
-
-#testimonials {
-   
+.b-1-h3 {
+    padding: 5% 7%;
     text-align: center;
-    background-color:#ef8172;
+    font-size: xx-large;
+    font-family: 'Sigmar', cursive;
+}
+
+#feature {
+    background-image: url("../4.jpg");
     color: #fff;
 }
 
-.carousel-item {
-    padding: 7% 15%;
+.img-title-1 {
+    padding-bottom: 20px;
 }
 
-.testimonials-image {
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
+.img-title-2 {
+    padding-bottom: 32px;
 }
 
-#press {
-    background-color:#ef8172;
-    text-align: center;
-    padding-bottom: 3%;
+.img-title {
+    padding-bottom: 10px;
 }
 
-.press-logo {
-    width: 15%;
-    margin: 20px;
-}
-
-
-
-   /*Pricing Section*/
-
-#pricig {
-    padding: 100px;
-}
-
-.pricing-column {
-    padding: 3% 2%;
-}
-
-
-   /* CTA Cestion */
-
-#cta {
-    background-color: #ff4c68;
-    color: #fff;
-    padding: 7% 15%;
-    text-align: center;
-}
-
-.cta-heading {
-   font-family: "montserrat-light";
-   font-size: 3.5rem;
-   line-height: 1.5;
-}
-
-
-/* Footer section */
-
-#footer {
-    padding: 7% 15%;
-    text-align: center;
-}
-
-.social-icon {
-    margin: 20px 10px;
-}
-
-@media (max-width:1028px) {
-
-    #title {
-        text-align: center;
-
-    }
-
-    .title-image {
-        position: static;
-        transform: rotate(0);
-    }
-}
-
-
-
-
-
-
-
+/* Novels */
 
 
