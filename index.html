@@ -18,60 +18,61 @@
 </head>
 
 <body>
-  <section class="title">
+  <section id="navbar" class="title">
 
-    <div class="container-fluid">
+    <nav class="navbar navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">WB Library</a>
+      </div>
+    </nav>
 
-      <!-- As a link -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button> 
-
-       <div class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="">Library</a>
-         <ul class="navbar-nav ml-auto">
-           <li class="nav-item">
-            <a class="nav-link" href="">Home</a> 
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Books
-            </a>
-            <ul class="dropdown-menu">
+     <nav class="navbar navbar-dark for fixed-top">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="dropdown-item" href="#B-1">Human Development</a>
+                <a class="nav-link active" aria-current="page" href="#navbar">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="dropdown-item" href="#B-2">Islamic</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Books
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#B-1">human development</a></li>
+                  <li><a class="dropdown-item" href="#B-2">Islamic </a></li>                 
+                  <li><a class="dropdown-item" href="#B-3">intellectual</a></li>
+                  <li><a class="dropdown-item" href="#B-4">social</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="dropdown-item" href="#B-3">intellectual</a>
-              </li>
-              <li class="nav-item">
-                <a class="dropdown-item" href="#B-4">social</a>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Novels
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#B-5">Police</a></li>
+                  <li><a class="dropdown-item" href="#B-6">Religious</a></li>
+                  <li><a class="dropdown-item" href="#B-7">romantic</a></li>
+                </ul>
               </li>
             </ul>
-
-            </li>
-            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Novels
-             </a>
-             <ul class="dropdown-menu">
-               <li class="nav-item">
-                 <a class="dropdown-item" href="#B-5">Police</a>
-               </li>
-               <li class="nav-item">
-                 <a class="dropdown-item" href="#B-6">Religious</a>
-               </li>
-               <li class="nav-item">
-                 <a class="dropdown-item" href="#B-7">humanity</a>
-               </li>
-             </ul>
-           </li>
-         </ul>
-       </div>
-     </nav>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
     
      <div class="row">
       <div class="col-lg-8">
@@ -80,8 +81,6 @@
          <h3 class="hh">The WB Xplore Digital Library offers online access to over
           5,300 high-quality, technical eBook titles.</h3>
       </div>
-    </div>
-
     </div>
     
   </section>
@@ -309,8 +308,7 @@
  </section>
 
  <section id="B-2">
-   <h3 class="b-1-h3">Islamic books aim to achieve its mission and goals by presenting 
-      the most important Islamic references and books in various religious sciences</h3>
+   <h3 class="b-1-h3">Islamic Books</h3>
  </section>
 
  <section id="feature">
@@ -476,8 +474,7 @@
   </section>
 
   <section id="B-3">
-    <h3 class="b-1-h3">Intellectual books benefit the mind and make 
-      the reader rich in knowledge, experiences, and information</h3>
+    <h3 class="b-1-h3">Intellectual Books</h3>
   </section>
 
   <section id="feature">
@@ -592,8 +589,7 @@
   </section>
 
   <section id="B-4">
-    <h3 class="b-1-h3">The social sciences are of great importance in all areas of life,
-       especially in the areas of social care, primary care, the justice system, and business</h3>
+    <h3 class="b-1-h3">social books</h3>
   </section>
 
   <section id="feature">
@@ -902,10 +898,10 @@
     </div>
 
     <div class="feature-box col-lg-3 col-md-6">
-      <img class="img-title" src="">
-      <h3></h3>
-      <p></p>
-      <p></p>
+      <img class="img-title" src="novel-5.jpg">
+      <h3>المنتقبة الحسناء</h3>
+      <p>شيماء عفيفي</p>
+      <p>353 page</p>
       <div class="button-box">
         <button type="button" class="btn btn-outline-light">Read</button>
         <button type="button" class="btn btn-outline-light">Download</button>
@@ -917,18 +913,18 @@
   </section>
 
   <section id="B-7">
-    <h3 class="b-1-h3"></h3>
+    <h3 class="b-1-h3">Romance novels</h3>
   </section>
 
-  <section id="novels">
+  <section id="feature">
 
     <div class="row">
 
       <div class="feature-box col-lg-3 col-md-6">
-        <img class="img-title" src="">
-        <h3></h3>
-        <p></p>
-        <p></p>
+        <img class="img-title" src="novel-1.jpg">
+        <h3>أنت لي</h3>
+        <p>منى المرشود</p>
+        <p>518 page</p>
         <div class="button-box">
           <button type="button" class="btn btn-outline-light">Read</button>
           <button type="button" class="btn btn-outline-light">Download</button>
@@ -936,22 +932,10 @@
       </div>
       
       <div class="feature-box col-lg-3 col-md-6">
-        <img class="img-title" src="">
-        <h3></h3>
-        <p></p>
-        <p></p>
-        <div class="button-box">
-          <button type="button" class="btn btn-outline-light">Read</button>
-          <button type="button" class="btn btn-outline-light">Download</button>
-        </div>
-      </div>
-
-      
-      <div class="feature-box col-lg-3 col-md-6">
-        <img class="img-title" src="">
-        <h3></h3>
-        <p></p>
-        <p></p>
+        <img class="img-title" src="novel-6.jpg">
+        <h3>ثاني أكسيد الحب</h3>
+        <p>منى سلامة</p>
+        <p>280 page</p>
         <div class="button-box">
           <button type="button" class="btn btn-outline-light">Read</button>
           <button type="button" class="btn btn-outline-light">Download</button>
@@ -960,10 +944,10 @@
 
       
       <div class="feature-box col-lg-3 col-md-6">
-        <img class="img-title" src="">
-        <h3></h3>
-        <p></p>
-        <p></p>
+        <img class="img-title" src="novel-8.jpg">
+        <h3>هيبتا</h3>
+        <p>محمد صادق</p>
+        <p>248 page</p>
         <div class="button-box">
           <button type="button" class="btn btn-outline-light">Read</button>
           <button type="button" class="btn btn-outline-light">Download</button>
@@ -972,10 +956,58 @@
 
       
       <div class="feature-box col-lg-3 col-md-6">
-        <img class="img-title" src="">
-        <h3></h3>
-        <p></p>
-        <p></p>
+        <img class="img-title" src="novel-3.jpg">
+        <h3>أرض زيكولا</h3>
+        <p>عمرو عبد الحميد</p>
+        <p>288 page</p>
+        <div class="button-box">
+          <button type="button" class="btn btn-outline-light">Read</button>
+          <button type="button" class="btn btn-outline-light">Download</button>
+        </div>
+      </div>
+
+      
+      <div class="feature-box col-lg-3 col-md-6">
+        <img class="img-title" src="novel-10.jpg">
+        <h3>الأسود يليق بك</h3>
+        <p>أحلام مستغانمي</p>
+        <p>335 page</p>
+        <div class="button-box">
+          <button type="button" class="btn btn-outline-light">Read</button>
+          <button type="button" class="btn btn-outline-light">Download</button>
+        </div>
+      </div>
+
+      
+      <div class="feature-box col-lg-3 col-md-6">
+        <img class="img-title" src="novel-11.jpg">
+        <h3>رغم الفراق</h3>
+        <p>نور عبد المجيد</p>
+        <p>178 page</p>
+        <div class="button-box">
+          <button type="button" class="btn btn-outline-light">Read</button>
+          <button type="button" class="btn btn-outline-light">Download</button>
+        </div>
+      </div>
+
+      
+      <div class="feature-box col-lg-3 col-md-6">
+        <img class="img-title" src="novel-18.jpg">
+        <h3>إيماجو</h3>
+        <p>دعاء عبد الرحمان</p>
+        <p>334 page</p>
+        <div class="button-box">
+          <button type="button" class="btn btn-outline-light">Read</button>
+          <button type="button" class="btn btn-outline-light">Download</button>
+        </div>
+      </div>
+
+      
+      <div class="feature-box col-lg-3 col-md-6">
+        <img class="img-title" src="novel-14.jpg">
+        <h3>في مصيدة الحب</h3>
+        <p>دايفيد يوون</p>
+        <p>459 page</p>
         <div class="button-box">
           <button type="button" class="btn btn-outline-light">Read</button>
           <button type="button" class="btn btn-outline-light">Download</button>
@@ -985,6 +1017,27 @@
 
     </div>
 
+  </section>
+
+  <section id="">
+    <h3 class="b-1-h3"></h3>
+  </section>
+
+  <section id="feature">
+
+      
+    <div class="feature-box col-lg-3 col-md-6">
+      <img class="img-title" src="">
+      <h3></h3>
+      <p></p>
+      <p></p>
+      <div class="button-box">
+        <button type="button" class="btn btn-outline-light">Read</button>
+        <button type="button" class="btn btn-outline-light">Download</button>
+      </div>
+    </div>
+
+    
   </section>
 
 </body>

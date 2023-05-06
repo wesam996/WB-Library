@@ -53,4 +53,6 @@ body {
 
 /* Novels */
 
-
+.navbar-toggler{
+    padding-right: 0%;
+}
